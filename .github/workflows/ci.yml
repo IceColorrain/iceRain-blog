@@ -16,12 +16,6 @@ jobs:
         with:
           fetch-depth: 0 # 获取完整的历史记录以便正确生成最后更新时间
 
-      # 安装npm包管理器，指定使用版本10
-      - name: Setup npm
-        uses: npm/action-setup@v2 # 添加npm安装步骤
-        with:
-          version: 10 # 指定npm版本，可以根据需要调整
-
       # 安装Node.js运行环境，使用版本22
       - name: Setup Node.js
         uses: actions/setup-node@v4
